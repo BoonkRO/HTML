@@ -1,9 +1,11 @@
 article{
+    font-family: Verdana;
 	margin-left: 26%;
 	margin-right: 2%;
 	height: 100px;
 }
-titulo{
+
+title{
     font-family: Verdana;
 }
 
@@ -38,4 +40,35 @@ li a.active {
 li a:hover:not(.active) {
     background-color: #555;
     color: white;
+}
+
+footer{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+
+div {
+    float: left;
+}
+
+.twitterimg {
+    width:  55px;
+    height: 50px;
+    background: url(imgSprites/sprite2.png) 0px 0;
+    margin-left: 25%;
+}
+
+.instagramimg {
+    width:  50px;
+    height: 50px;
+    background: url(imgSprites/sprite2.png) 50px 0;
+}
+
+.facebookimg {
+    width:  50px;
+    height: 50px;
+    background: url(imgSprites/sprite2.png) 98px 0;
 }

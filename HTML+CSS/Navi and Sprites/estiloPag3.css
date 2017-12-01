@@ -1,3 +1,7 @@
+article{
+    font-family: Verdana;
+}
+
 ul {
     list-style-type: none;
     margin-top: -40px;
@@ -33,4 +37,33 @@ li a:hover {
 li a.active {
     background-color: #DAA520;
     color: white;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+div {
+    float: left;
+}
+
+.twitterimg {
+    width:  55px;
+    height: 50px;
+    background: url(imgSprites/sprite2.png) 0px 0;
+}
+
+.instagramimg {
+    width:  50px;
+    height: 50px;
+    background: url(imgSprites/sprite2.png) 50px 0;
+}
+
+.facebookimg {
+    width:  50px;
+    height: 50px;
+    background: url(imgSprites/sprite2.png) 98px 0;
 }
