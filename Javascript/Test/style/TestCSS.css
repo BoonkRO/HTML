@@ -1,0 +1,48 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+	background-color: #eea700;
+}
+
+#cabecera{
+	margin-top: -100px;
+	font-weight: bold;
+}
+
+#JS {
+	font-size: 115px;
+	color: black;
+	display: block;
+	text-align: center;
+}
+
+content {
+	margin-left: 10%;
+	position: relative;
+	margin-top: 5%;
+	padding: 3%;
+	float: top;
+}
+
+
+#piepag {
+	color: white;
+	text-align: right;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+}
+
+#boton {
+	margin-left: 10%;
+	position: absolute;
+  	bottom: 0;
+  	width: 10%;
+  	height: 40px;
+  	margin-bottom: 5px;
+}
+

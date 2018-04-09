@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<test>
+
+	<!-- RADIO BUTTON -->
+	<pregunta>
+		<category>radio</category>
+		<enunciado>¿En qué lugar se ejecuta generalmente el código JavaScript?</enunciado>
+		<opcion correcta="true">Cliente (en el propio navegador de internet)</opcion>
+		<opcion>Servidor</opcion>
+		<respuesta>El código JavaScript se ejecuta en el navegador web con el que hemos abierto la página. Aunque es cierto que existe un JavaScript que se ejecuta en el servidor, y que se conoce como server-side Javascript.</respuesta>
+	</pregunta>
+
+	<!-- RADIO BUTTON -->
+	<pregunta>
+		<category>radio</category>
+		<enunciado>¿Cuáles de estas son marcas para la inserción del código JavaScript en las páginas HTML?</enunciado>
+		<opcion correcta="true">&lt; script &gt; y &lt; /script &gt;</opcion>
+		<opcion>&lt; javascript _code &gt; y &lt; /javascript_code &gt;</opcion>
+		<opcion>&lt; ?script &gt; y &lt; script? &gt;</opcion>
+		<respuesta>El código JavaScript se debe insertar entre &lt; script &gt; y &lt; /script &gt;</respuesta>
+	</pregunta>
+
+	<!-- RADIO BUTTON -->
+	<pregunta>
+		<category>select</category>
+		<enunciado>La llamada al código Javascript debe colocarse en:</enunciado>
+		<opcion correcta="true">Puede colocarse en la sección Head o en Body</opcion>
+		<opcion>La sección Body de la página</opcion>
+		<opcion>Antes de la etiqueta HTML</opcion>
+		<respuesta>Puede colocarse en ambas secciones. Un consejo para no entorpecer la visualización de la página en el navegador del usuario es colocarlo al final de la sección Body para que sea lo último que se cargue. En este sentido y a un nivel más avanzado, se puede ejecutar JavaScript de forma asíncrona</respuesta>
+	</pregunta>
+
+	<!-- SELECT -->
+	<pregunta>
+		<category>select</category>
+		<enunciado>En JavaScript, para darle el nombre a una variable, objeto o función, debemos tener en cuenta que:</enunciado>
+		<opcion correcta="true">JavaScript diferencia entre mayúsculas y minúsculas</opcion>
+		<opcion>No se pueden usar mayúsculas</opcion>
+		<opcion>JavaScript no distingue entre mayúsculas y minúsculas</opcion>
+		<respuesta>Por tanto, las variables “pruebA” y “prueba” no son las mismas, cosa que no ocurre en otros lenguajes, para los que nuestras variables de ejemplo serían la misma.</respuesta>
+	</pregunta>
+
+	<!-- SELECT -->
+	<pregunta>
+		<category>radio</category>
+		<enunciado>¿Cuál es la instrucción usada para devolver un valor en una función de JavaScript?</enunciado>
+		<opcion correcta="true">Return</opcion>
+		<opcion>Send</opcion>
+		<opcion>Value</opcion>
+		<respuesta>Por ejemplo, para devolver "verdadero", se ha de poner "return true;"</respuesta>
+	</pregunta>
+
+	<!-- CHECK BOX -->
+	<pregunta>
+		<category>check</category>
+		<enunciado>¿Cuáles son tipos de datos de JS? </enunciado>
+		<opcion correcta="true">String</opcion>
+		<opcion correcta="true">Function</opcion>
+		<opcion>var</opcion>
+		<opcion>Abstract</opcion>
+	</pregunta>
+
+	<!-- CHECK BOX -->
+	<pregunta>
+		<category>check</category>
+		<enunciado>¿Es posible saber si una variable es un objeto?</enunciado>
+		<opcion correcta="true">Si</opcion>
+		<opcion>No</opcion>
+		<respuesta>if(abc &amp;&amp; typeof abc === "object") {
+console.log('abc is an object and does not return null value');
+}</respuesta>
+	</pregunta>
+
+
+	<!-- CHECK BOX -->
+	<pregunta>
+		<category>check</category>
+		<enunciado>¿Cómo se puede crear una array en JS? Selecciona las respuestas correctas.</enunciado>
+		<opcion correcta="true">var scripts = new Array();</opcion>
+		<opcion correcta="true">var cars = ["Saab", "Volvo", "BMW"];</opcion>
+		<opcion>scripts[0] = "PHP";
+		scripts[1] = "ASP";
+		scripts[2] = "JavaScript";
+		scripts[3] = "HTML";</opcion>
+		<opcion>cars[0] = "Saab";
+		cars[1] = "Volvo";
+		cars[2] = "BMW";</opcion>
+	</pregunta>
+
+	<!-- CHECK BOX -->
+	<pregunta>
+		<category>check</category>
+		<enunciado>Es un tipo de bucles en JS.</enunciado>
+		<opcion correcta="true">Todas son correctas</opcion>
+		<opcion>for</opcion>
+		<opcion>do-while</opcion>
+		<opcion>while</opcion>
+	</pregunta>
+	
+
+	<!-- CHECK BOX -->
+	<pregunta>
+		<category>check</category>
+		<enunciado>¿Qué operadores booleanos permite JS?</enunciado>
+		<opcion correcta="true">&amp;&amp;</opcion>
+		<opcion correcta="true">||</opcion>
+		<opcion correcta="true">!</opcion>
+		<opcion>OR</opcion>
+	</pregunta>
+
+</test>

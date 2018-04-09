@@ -1,27 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="icon" href="imgs/js.png">
 	<meta name="viewport" content="width=device-width, user-scalable=no"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<link rel="stylesheet" type="text/css" href="TestCSS.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script type="text/javascript" src="TestJS.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/TestCSS.css">
+	<script type="text/javascript" src="js/TestJS.js"></script>
 	<title>Test Javascript</title>
 </head>
 <body>
-<xml id="preguntas" src="TestXML.xml"></xml>
 <header>
-	<a class="cebecera">
-		<span class="JS">JAVASCRIPT</span>
-	</a>
+	<div id="cabecera">
+		<p id="JS">JAVASCRIPT</p>
+	</div>
 </header>
 
-
-<input type="submit" class="boton" value="Enviar"/>
-
+<form id="formulario"> </form>
 
 <footer>
-	<p>© Copyright 2017-2018 TestJS.es - Todos los Derechos Reservados</p>
+	<input onclick="corregirPreguntas()" type="submit" id="boton" value="Corregir"/>
+	<div id="piepag">© Copyright 2017-2018 TestJS.com - Todos los Derechos Reservados</div>
 </footer>
 </body>
 </html>
