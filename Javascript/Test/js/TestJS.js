@@ -53,7 +53,7 @@ function tipoRadio(i){
 	for (var x=0; x<numSol; x++){
 		var pregunta = xmlDoc.getElementsByTagName('pregunta')[i].getElementsByTagName('respuesta')[x].innerHTML;
 		var radioButton = document.createElement("input");
-		var label document.createElement("label");
+		var label document.createElement('label');
 
 
 		radioButton.setAttribute("type", "radio");
