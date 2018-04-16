@@ -19,30 +19,67 @@ body {
 	text-align: center;
 }
 
-content {
-	margin-left: 10%;
-	position: relative;
-	margin-top: 5%;
-	padding: 3%;
-	float: top;
+.pregunta {
+    margin-left: 10%;
+    margin-bottom: 3%;
+    font-family: Calibri ,sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
 }
 
+#tituloUni {
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Calibri, sans-serif;
+    margin-top: 20px;
+}
+
+#imagen1 {
+    height: 400px;
+    width: 400px;
+    float: left;
+    margin: 10px;
+}
+
+#imagen2 {
+    height: 400px;
+    width: 400px;
+    float: right;
+    margin: 10px;
+}
+
+input{
+    margin-left: 10%;
+}
+
+select{
+    margin-left: 10%;
+}
 
 #piepag {
 	color: white;
-	text-align: right;
+    text-align: right;
 	width: 100%;
-	bottom: 0;
-	left: 0;
-	position: fixed;
+	position: absolute;
 }
 
 #boton {
 	margin-left: 10%;
 	position: absolute;
-  	bottom: 0;
   	width: 10%;
   	height: 40px;
   	margin-bottom: 5px;
+    !important;
 }
 
+#boton1 {
+    width: 12%;
+    height: 7%;
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 48%;
+    margin-left: -50px;
+}
