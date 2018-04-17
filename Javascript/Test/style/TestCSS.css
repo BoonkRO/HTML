@@ -75,11 +75,54 @@ select{
 }
 
 #boton1 {
-    width: 12%;
-    height: 7%;
+    text-align: center;
+    width: 160px;
+    height: 75px;
     position: absolute;
     justify-content: center;
     top: 50%;
     left: 48%;
     margin-left: -50px;
+}
+
+@media screen and (max-width: 1000px) {
+    html{
+        background-color: lightcoral;
+    }
+    body {
+        background-color: lightcoral;
+    }
+
+    #tituloUni{
+        background-color: lightcoral;
+        font-size: 60px;
+    }
+
+    #imagen1{
+        height: 300px;
+        width: 300px;
+        align-content: center;
+        position: absolute;
+        margin-left: 30%;
+    }
+
+    #imagen2 {
+        display: none;
+    }
+
+    #boton{
+        width:100%;
+        margin: 0;
+    }
+
+    #boton1{
+        text-align: center;
+        width: 100px;
+        height: 60px;
+        position: absolute;
+    }
+
+    #piepag{
+        display: none;
+    }
 }

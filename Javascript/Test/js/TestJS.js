@@ -241,6 +241,9 @@ function corregirRadio(x){
 
             if (respuesta) {
                 resultadoFinal++;
+                document.getElementById("div" + x).style.color = "green";
+            }else{
+                document.getElementById("div" + x).style.color = "red";
             }
         }
     }
@@ -249,7 +252,7 @@ function corregirRadio(x){
 
 function corregirCheck(x) {
 	var contarCorrectas = 0;
-    var contarSeleccionadas = 0;
+	var contarSeleccionadas = 0;
     var seleccionadasCorrectas = 0;
     var radios = document.getElementsByName(x);
 
@@ -267,8 +270,8 @@ function corregirCheck(x) {
 
         if (radios[z].checked)
         {
-            var preguntaSel = radios[z].getAttribute("value");
-            var resp = xmlDoc.getElementsByTagName("pregunta")[x].getElementsByTagName("opcion")[preguntaSel].getAttribute("correcta");
+            var preguntaSeleccionada = radios[z].getAttribute("value");
+            var resp = xmlDoc.getElementsByTagName("pregunta")[x].getElementsByTagName("opcion")[preguntaSeleccionada].getAttribute("correcta");
 
             if (resp) {
                 seleccionadasCorrectas++;
@@ -282,6 +285,9 @@ function corregirCheck(x) {
 
     if (seleccionadasCorrectas === contarCorrectas && contarCorrectas === contarSeleccionadas) {
         resultadoFinal++;
+        document.getElementById("div" + x).style.color = "green";
+    }else{
+        document.getElementById("div" + x).style.color = "red";
     }
 
 }
@@ -293,10 +299,13 @@ function corregirSelect(x) {
     for (var i = 0, length = seleccion.length; i < length; i++){
         if (seleccion[i].selected) {
             var preguntaSeleccionada = document.getElementById(x + "select").value;
-            var respuesta = xmlDoc.getElementsByTagName("pregunta")[x].getElementsByTagName("opcion")[preguntaSeleccionada].getAttrinute("correcta");
+            var respuesta = xmlDoc.getElementsByTagName("pregunta")[x].getElementsByTagName("opcion")[preguntaSeleccionada].getAttribute("correcta");
 
             if (respuesta){
                 resultadoFinal++;
+                document.getElementById("div" + x).style.color = "green";
+            }else{
+                document.getElementById("div" + x).style.color = "red";
             }
         }
     }
@@ -309,5 +318,8 @@ function corregirText(x) {
 
     if (respuesta === texto){
         resultadoFinal++;
+        document.getElementById("div" + x).style.color = "green";
+    }else{
+        document.getElementById("div" + x).style.color = "red";
     }
 }
