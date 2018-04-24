@@ -7,8 +7,7 @@
 		<category>radio</category>
 		<enunciado>¿En qué lugar se ejecuta generalmente el código JavaScript?</enunciado>
 		<opcion correcta="true">Cliente (en el propio navegador de internet)</opcion>
-		<opcion>Servidor</opcion>
-		<respuesta>El código JavaScript se ejecuta en el navegador web con el que hemos abierto la página. Aunque es cierto que existe un JavaScript que se ejecuta en el servidor, y que se conoce como server-side Javascript.</respuesta>
+		<opcion>Servidor</opcion>		
 	</pregunta>
 
 	<!-- RADIO BUTTON -->
@@ -18,7 +17,6 @@
 		<opcion correcta="true">&lt; script &gt; y &lt;/script &gt;</opcion>
 		<opcion>&lt; javascript _code &gt; y &lt; /javascript_code &gt;</opcion>
 		<opcion>&lt; ?script &gt; y &lt; script? &gt;</opcion>
-		<respuesta>El código JavaScript se debe insertar entre &lt; script &gt; y &lt; /script &gt;</respuesta>
 	</pregunta>
 
 	<!-- SELECT -->
@@ -44,9 +42,7 @@
 		<category>text</category>
 		<enunciado>¿Cuál es la instrucción usada para devolver un valor en una función de JavaScript?</enunciado>
 		<opcion correcta="true">Return</opcion>
-	<!--<opcion>Send</opcion>
-    <opcion>Value</opcion>-->
-</pregunta>
+	</pregunta>
 
 <!-- CHECK BOX -->
 	<pregunta>

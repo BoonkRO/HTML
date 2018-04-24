@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="test">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pregunta"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pregunta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="category">radio</xs:element>
+        <xs:element ref="enunciado">¿En qué lugar se ejecuta generalmente el código JavaScript?</xs:element>
+        <xs:element maxOccurs="unbounded" ref="opcion">Cliente (en el propio navegador de internet)</xs:element>
+        <xs:element maxOccurs="unbounded" ref="opcion">Servidor</xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pregunta"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="pregunta"/>
+      <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="category">radio</xs:element>
+        <xs:element ref="enunciado">¿Cuáles de estas son marcas para la inserción del código JavaScript en las páginas HTML?</xs:element>
+        <xs:element maxOccurs="unbounded" ref="opcion">&lt; script &gt; y &lt;/script &gt;</xs:element>
+        <xs:element maxOccurs="unbounded" ref="opcion">&lt; javascript _code &gt; y &lt; /javascript_code &gt;</xs:element>
+        <xs:element maxOccurs="unbounded" ref="opcion">&lt; ?script &gt; y &lt; script? &gt;</xs:element>
+      </xs:sequence>
+    </xs:complexType>
+
+
+  <xs:complexType>
+  <xs:element name="category" type="xs:NCName">select</xs:element>
+  <xs:element name="enunciado" type="xs:string">La llamada al código Javascript debe colocarse en:</xs:element>
+  <xs:element name="opcion">
+    <xs:complexType mixed="true">
+      <xs:attribute name="correcta" type="xs:boolean">Puede colocarse en la sección Head o en Body</xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="opcion">La sección Body de la página</xs:element>
+  <xs:element name="opcion">Antes de la etiqueta HTML</xs:element>
+</xs:complexType>
+
+  <xs:complexType>
+  <xs:element name="category" type="xs:NCName">select</xs:element>
+  <xs:element name="enunciado" type="xs:string">En JavaScript, para darle el nombre a una variable, objeto o función, debemos tener en cuenta que:</xs:element>
+  <xs:element name="opcion">
+    <xs:complexType mixed="true">
+      <xs:attribute name="correcta" type="xs:boolean">JavaScript diferencia entre mayúsculas y minúsculas</xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="opcion">No se pueden usar mayúsculas</xs:element>
+  <xs:element name="opcion">JavaScript no distingue entre mayúsculas y minúsculas</xs:element>
+</xs:complexType>
+
+<xs:complexType>
+  <xs:element name="category" type="xs:NCName">check</xs:element>
+  <xs:element name="enunciado" type="xs:string">¿Cuáles son tipos de datos de JS?</xs:element>
+  <xs:element name="opcion">
+    <xs:complexType mixed="true">
+      <xs:attribute name="correcta" type="xs:boolean">String</xs:attribute>
+      <xs:attribute name="correcta" type="xs:boolean">Function</xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="opcion">var</xs:element>
+  <xs:element name="opcion">Abstract</xs:element>
+</xs:complexType>
+
+
+<xs:complexType>
+  <xs:element name="category" type="xs:NCName">check</xs:element>
+  <xs:element name="enunciado" type="xs:string">¿Cómo se puede crear una array en JS? Selecciona las respuestas correctas.</xs:element>
+  <xs:element name="opcion">
+    <xs:complexType mixed="true">
+      <xs:attribute name="correcta" type="xs:boolean">var scripts = new Array();</xs:attribute>
+      <xs:attribute name="correcta" type="xs:boolean">var cars = ["Saab", "Volvo", "BMW"];</xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="opcion">scripts[0] = "PHP";
+    scripts[1] = "ASP";
+    scripts[2] = "JavaScript";
+    scripts[3] = "HTML";</xs:element>
+  <xs:element name="opcion">cars[0] = "Saab";
+    cars[1] = "Volvo";
+    cars[2] = "BMW";</xs:element>
+</xs:complexType>
+
+
+<xs:complexType>
+  <xs:element name="category" type="xs:NCName">check</xs:element>
+  <xs:element name="enunciado" type="xs:string">Es un tipo de bucles en JS.</xs:element>
+  <xs:element name="opcion">
+    <xs:complexType mixed="true">
+      <xs:attribute name="correcta" type="xs:boolean">Todas son correctas</xs:attribute>
+      </xs:complexType>
+  </xs:element>
+  <xs:element name="opcion">for</xs:element>
+  <xs:element name="opcion">do-while</xs:element>
+  <xs:element name="opcion">while</xs:element>
+</xs:complexType>
+
+
+<xs:complexType>
+  <xs:element name="category" type="xs:NCName">check</xs:element>
+  <xs:element name="enunciado" type="xs:string">¿Qué operadores booleanos permite JS?</xs:element>
+  <xs:element name="opcion">
+    <xs:complexType mixed="true">
+      <xs:attribute name="correcta" type="xs:boolean">&amp;&amp;</xs:attribute>
+      <xs:attribute name="correcta" type="xs:boolean">||</xs:attribute>
+      <xs:attribute name="correcta" type="xs:boolean">!</xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="opcion">OR</xs:element>
+</xs:complexType>
+
+
+</xs:schema>
