@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ELEMENT test = (pregunta)+>
+	<ATTLIST test = xmlns CDATA #FIXED ''>
+
+<ELEMENT pregunta = (category,enunciado,opcion+,respuesta)>
+	<ATTLIST pregunta xmlns CDATA #FIXED ''>
+
+<ELEMENT category = (#PCDATA)>
+	<ATTLIST category = xmlns CDATA #FIXED ''>
+
+<ELEMENT enunciado = (#PCDATA)>
+	<ATTLIST enunciado = xmlns CDATA #FIXED ''>
+
+<ELEMENT opcion = (#PCDATA)>
+	<ATTLIST opcion = xmlns CDATA #FIXED '' correcta NMTOKEN #IMPLIED>
+
+<ELEMENT respuesta = (#PCDATA)>
+	<ATTLIST respuesta = xmlns CDATA #FIXED ''>
