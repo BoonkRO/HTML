@@ -17,7 +17,7 @@ function readXML() {
 		  	gestionarXml(this);
 		}
 	};
-	xhttp.open("GET", "TestXML.xml", true);
+	xhttp.open("POST", "TestXML.xml", true);
 	xhttp.send();
 
 }
