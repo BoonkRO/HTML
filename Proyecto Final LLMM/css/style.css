@@ -8,18 +8,22 @@
   float: right;
 }
 
-/* Set black background color, white text and some padding */
-footer {
-  background-color: #555;
-  color: white;
-  padding: 15px;
-}
+img {
+    max-height: 300px;
+    align-content: center;
 
+}
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
   .sidenav {
-    height: auto;
-    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    background-color: grey;
+    width: 100%;
+    z-index: 100; 
+
+
   }
   .row.content {height: auto;} 
 }
