@@ -3,17 +3,32 @@
     
 /* Set gray background color and 100% height */
 .sidenav {
-  background-color: #f1f1f1;
-  height: 100%;
-  float: right;
+    background-color: #f1f1f1;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
 img {
     max-height: 300px;
     align-content: center;
-
 }
-/* On small screens, set height to 'auto' for sidenav and grid */
+
+button {
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    z-index: 1;
+    left: 2%;
+    right: 0;
+}
+
+
+
 @media screen and (max-width: 767px) {
   .sidenav {
     position: fixed;
