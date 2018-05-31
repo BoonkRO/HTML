@@ -1,4 +1,5 @@
 var totalNoticias = 0;
+var numeroNoticia = 0;
 
 $.getJSON('data/1.json', function(data) {
     $.each(data.Noticias, function(x, y) {
@@ -7,7 +8,6 @@ $.getJSON('data/1.json', function(data) {
 });
 
 function cargarNoticias() {
-    let numeroNoticia = 0;
 
     if (numeroNoticia < totalNoticias) {
 
@@ -16,7 +16,7 @@ function cargarNoticias() {
 
             let div = document.createElement('div');
             div.setAttribute('class', 'noticia');
-            div.setAttribute('onclick', 'ampliarNoticia(this)');
+            div.setAttribute('onclick', 'mostrarNoticia(this)');
             noticias.appendChild(div);
 
             let titulo = document.createElement('h2');
@@ -31,14 +31,15 @@ function cargarNoticias() {
 
 
             let preTexto = document.createElement('p');
-            preTexto.setAttribute('class', data.Noticias[numeroNoticia]['resumenNoticia']);
-            preTexto.innerHTML = data.Noticias[numeroNoticia]['resumenNoticia'];
+            preTexto.setAttribute('class', data.Noticias[numeroNoticia]['preTexto']);
+            preTexto.innerHTML = data.Noticias[numeroNoticia]['preTexto'];
             div.appendChild(preTexto);
 
             let texto = document.createElement('p');
-            texto.setAttribute('class', 'texto');
+            texto.setAttribute('class', 'noticiaCompleta');
             texto.setAttribute('style', 'display:none');
             texto.innerHTML = data.Noticias[numeroNoticia]['texto'];
+            div.appendChild(texto);
 
             let imagen = document.createElement('img');
             imagen.setAttribute('src', data.Noticias[numeroNoticia]['imgbig']);
@@ -53,20 +54,12 @@ function cargarNoticias() {
     }
 
     else{
-        let finNoticias = document.createElement('h5');
+        alert("No hay mas noticias, próximamente más.");
+
+        /*let finNoticias = document.createElement('h5');
         let final = document.createElement('div');
         finNoticias.innerHTML = "No hay mas noticias, próximamente más --> :D";
-        final.appendChild(finNoticias);
-    }
-}
-
-
-function ampliarNoticia(info) {
-    if($('.oculto', info).is(':visible')){
-        $('.oculto', info).slideUp();
-    }
-    else{
-        $('.oculto', info).slideDown();
+        final.appendChild(finNoticias);*/
     }
 }
 
