@@ -12,9 +12,9 @@ function cargarNoticias() {
     if (numeroNoticia < totalNoticias) {
 
         $.getJSON("data/1.json", function (data) {
-            let noticias = document.getElementById('noticias');
-
             let div = document.createElement('div');
+
+            let noticias = document.getElementById('noticias');
             div.setAttribute('class', 'noticia');
             div.setAttribute('onclick', 'mostrarNoticia(this)');
             noticias.appendChild(div);
@@ -28,7 +28,6 @@ function cargarNoticias() {
             let icono2 = document.createElement('span');
             icono2.setAttribute('class', 'glyphicon glyphicon-time');
             icono.appendChild(icono2);
-
 
             let preTexto = document.createElement('p');
             preTexto.setAttribute('class', data.Noticias[numeroNoticia]['preTexto']);

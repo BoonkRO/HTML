@@ -1,5 +1,7 @@
 /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-.row.content {height: 1500px}
+.row.content {
+    height: 1500px
+}
     
 /* Set gray background color and 100% height */
 .sidenav {
@@ -13,10 +15,58 @@
     padding-top: 20px;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    background-color: darkslategrey;
+    color: black;
+}
+
+.active {
+    background-color: orange;
+    color: white;
+}
+
+.noticia {
+    background-color: white;
+    border-style: double;
+    border-radius: 5px;
+    margin: 1%;
+}
+
+.noticia a, p {
+    padding-left: 2%;
+}
+
+.glyphicon {
+    padding-left: 3%;
+    font-weight: bold;
+}
+
 iframe{
-    float: right;
     position: relative;
-    right: 0;
+    left: 25%;
+    top: 15px;
+    margin-bottom: 2%;
 }
 
 img {
@@ -40,22 +90,29 @@ button {
 
 
 @media screen and (max-width: 767px) {
-  .sidenav {
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-    background-color: grey;
-    width: 100%;
-    z-index: 100; 
+    .sidenav {
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+        background-color: grey;
+        width: 100%;
+        z-index: 100;
+    }
 
+    img {
+        max-width: 450px;
+    }
 
-  }
-  .row.content {
-      height: auto;
-  }
+    .topnav{
+        margin-top: 50px;
+    }
 
-  button{
-      left: 0;
-      width: 100%;
-  }
+    .row.content {
+        height: auto;
+    }
+
+    button{
+        left: 0;
+        width: 100%;
+    }
 }
