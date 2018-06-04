@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+    <channel>
+        <title>Lambiscadas, tienda de regalos.</title>
+        <link>https://rawgit.com/BoonkRO/LLMA-Updated/master/Proyecto%20Final%20LLMM/news.html</link>
+        <description>Tienda de articulos para regalos. Figuras de todas las series y peliculas.</description>
+        <item>
+            <title>Figura Iron Man</title>
+            <link>https://rawgit.com/BoonkRO/LLMA-Updated/master/Proyecto%20Final%20LLMM/news/news1.html</link>
+            <description>Figura de el Capitan America, Soldado de invierno.</description>
+        </item>
+        <item>
+            <title>Figura Thor</title>
+            <link>https://rawgit.com/BoonkRO/LLMA-Updated/master/Proyecto%20Final%20LLMM/news/news2.html</link>
+            <description>Nueva figura de Thor con Mjolnir.</description>
+        </item>
+    </channel>
+
+</rss>
